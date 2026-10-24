@@ -7,7 +7,7 @@ research_description: Materials for Extreme Environments, Cement, and Inorganic 
 job_title: Postdoctoral Researcher
 affiliation: Johns Hopkins University
 affiliation_detail: Hopkins Extreme Materials Institute, Baltimore, Maryland
-email: mzaki4@jh.edu
+email: ''
 biography: My research develops data-driven methods for materials in extreme environments and for
   construction materials, especially cement and inorganic glasses. I work on scientific language models,
   materials informatics, and explainable machine learning that connect composition, processing, and properties.
@@ -19,7 +19,8 @@ links:
   scholar: ''
   orcid: ''
   github: https://github.com/zakidotai
-  linkedin: ''
+  linkedin: https://www.linkedin.com/in/iamzaki/
+  x: https://x.com/zaki_here_
   website: https://web.iitd.ac.in/~cez198233
   website_label: IIT Delhi
 photo: images/zaki.jpg
