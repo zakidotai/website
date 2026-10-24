@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem("season"); } catch (err) {}
+      var season = "winter";
+      if (saved === "winter" || saved === "spring" || saved === "summer" || saved === "autumn") {
+        season = saved;
+      } else {
+        var month = new Date().getMonth();
+        if (month >= 2 && month <= 4) season = "spring";
+        else if (month >= 5 && month <= 7) season = "summer";
+        else if (month >= 8 && month <= 10) season = "autumn";
+      }
+      document.documentElement.setAttribute("data-season", season);
+    })();
+  </script>
+  {{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ partial "seo.html" . }}
+  {{ if or .Params.math (eq .Section "research") }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.renderMathInElement) {
+          renderMathInElement(document.body, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "\\(", right: "\\)", display: false }
+            ],
+            throwOnError: false
+          });
+        }
+      });
+    </script>
+  {{ end }}
+  {{- $season := resources.Get "js/season.js" | minify | fingerprint -}}
+  {{- $filters := resources.Get "js/filters.js" | minify | fingerprint -}}
+  <script defer src="{{ $season.RelPermalink }}"></script>
+  <script defer src="{{ $filters.RelPermalink }}"></script>
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main id="main" class="wrap">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>

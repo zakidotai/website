@@ -1,0 +1,12 @@
+{{ $topic := .Get "topic" }}
+{{ $items := where (hugo.Data.software | default slice) "verified" true }}
+{{ if $items }}
+  {{ $items = where $items "topics" "intersect" (slice $topic) }}
+{{ end }}
+{{ if $items }}
+  {{ range $items }}
+    {{ partial "software-item.html" . }}
+  {{ end }}
+{{ else }}
+  <p>No verified software or datasets are listed for this direction yet.</p>
+{{ end }}

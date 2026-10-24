@@ -1,0 +1,14 @@
+{{ $elements := slice }}
+{{ $position := 0 }}
+{{ range hugo.Data.publications }}
+  {{ if or .doi .url }}
+    {{ $position = add $position 1 }}
+    {{ $article := dict "@type" "ScholarlyArticle" "name" .title "author" .authors "datePublished" (printf "%d" (int .year)) }}
+    {{ with .venue }}{{ $article = merge $article (dict "isPartOf" .) }}{{ end }}
+    {{ with .doi }}{{ $article = merge $article (dict "sameAs" .) }}{{ end }}
+    {{ with .url }}{{ $article = merge $article (dict "url" .) }}{{ end }}
+    {{ $elements = $elements | append (dict "@type" "ListItem" "position" $position "item" $article) }}
+  {{ end }}
+{{ end }}
+{{ $payload := dict "@context" "https://schema.org" "@type" "ItemList" "itemListElement" $elements }}
+<script type="application/ld+json">{{ $payload | jsonify | safeJS }}</script>

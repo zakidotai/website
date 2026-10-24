@@ -1,0 +1,10 @@
+# Verified software and datasets only. Do not add a repository that has not been checked.
+# - name: Example
+#   description: One sentence.
+#   github: https://github.com/org/repo
+#   documentation: ""
+#   paper: ""
+#   dataset: ""
+#   topics: [materials-ai]
+#   verified: true
+[]

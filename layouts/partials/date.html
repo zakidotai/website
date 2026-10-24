@@ -1,0 +1,6 @@
+{{- $value := . -}}
+{{- $parsed := $value -}}
+{{- if not (in (printf "%T" $value) "Time") -}}
+  {{- $parsed = time.AsTime $value -}}
+{{- end -}}
+{{- $parsed.Format "2 January 2006" -}}

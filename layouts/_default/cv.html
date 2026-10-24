@@ -1,0 +1,93 @@
+{{ define "main" }}
+{{ $profile := hugo.Data.profile }}
+<h1>Curriculum vitae</h1>
+{{ if $profile.cv_pdf_available }}
+  <p><a href="{{ $profile.cv_pdf | relURL }}">Download CV (PDF)</a></p>
+{{ else if hugo.IsDevelopment }}
+  <p>The CV file is not available. Set cv_pdf_available in data/profile.yaml.</p>
+{{ end }}
+
+<h2>Education</h2>
+{{ range hugo.Data.education }}
+  <article>
+    <h3>{{ .degree }}</h3>
+    <p class="meta">{{ .institution }} · {{ .years }}</p>
+    {{ with .detail }}<p>{{ . }}</p>{{ end }}
+    {{ with .thesis }}<p>Thesis: {{ . }}</p>{{ end }}
+    {{ with .supervisors }}<p>Supervisors: {{ . }}</p>{{ end }}
+  </article>
+{{ end }}
+
+<h2>Appointments</h2>
+{{ range hugo.Data.appointments }}
+  <article>
+    <h3>{{ .title }}</h3>
+    <p class="meta">{{ .organization }} · {{ .years }}</p>
+    <p>{{ .detail }}</p>
+  </article>
+{{ end }}
+
+<h2>Research interests</h2>
+<ul class="stack">
+  {{ range hugo.Data.research }}
+    <li><a href="{{ .url | relURL }}">{{ .title }}</a></li>
+  {{ end }}
+</ul>
+
+<h2>Honors and awards</h2>
+<ul class="award-list stack">
+  {{ range hugo.Data.awards }}
+    <li><span class="meta">{{ .year }}</span> {{ .title }}</li>
+  {{ end }}
+</ul>
+
+<h2>Publications</h2>
+{{ $pubs := hugo.Data.publications }}
+{{ $journals := where $pubs "type" "journal" | len }}
+{{ $conferences := where $pubs "type" "conference" | len }}
+{{ $preprints := where $pubs "type" "preprint" | len }}
+{{ $chapters := where $pubs "type" "chapter" | len }}
+<p>
+  {{ len $pubs }} works are listed on the <a href="{{ "publications/" | relURL }}">publications page</a>:
+  {{ $journals }} journal {{ cond (eq $journals 1) "article" "articles" }},
+  {{ $conferences }} conference {{ cond (eq $conferences 1) "paper" "papers" }},
+  {{ $preprints }} {{ cond (eq $preprints 1) "preprint" "preprints" }},
+  and {{ $chapters }} book {{ cond (eq $chapters 1) "chapter" "chapters" }}.
+</p>
+
+<h2>Teaching and mentoring</h2>
+<ul class="stack">
+  {{ range hugo.Data.teaching }}
+    <li>{{ .code }}: {{ .title }}, {{ .institution }}, {{ .years }}</li>
+  {{ end }}
+</ul>
+<p><a href="{{ "teaching/" | relURL }}">Teaching page</a></p>
+
+<h2>Professional service</h2>
+{{ range hugo.Data.service }}
+  <p><span class="meta">{{ .years }}</span> {{ .text }}</p>
+{{ end }}
+
+<h2>Invited talks and presentations</h2>
+<p>Conference presentations are listed on the <a href="{{ "conferences/" | relURL }}">conferences page</a>. Dates are shown as they appear on the CV.</p>
+
+<h2>Software and datasets</h2>
+{{ $software := where (hugo.Data.software | default slice) "verified" true }}
+{{ if $software }}
+  <ul class="stack">
+    {{ range $software }}<li>{{ .name }}</li>{{ end }}
+  </ul>
+{{ else }}
+  <p>No verified software or datasets have been added yet.</p>
+{{ end }}
+
+<h2>Skills</h2>
+<ul class="stack">
+  {{ range hugo.Data.skills }}
+    <li>{{ .group }}: {{ .items }}</li>
+  {{ end }}
+</ul>
+
+<h2>Memberships</h2>
+<p>None listed.</p>
+{{ end }}

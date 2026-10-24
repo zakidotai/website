@@ -1,0 +1,9 @@
+{{ $topic := .Get "topic" }}
+{{ $pubs := where hugo.Data.publications "topics" "intersect" (slice $topic) }}
+{{ if $pubs }}
+  {{ range sort $pubs "year" "desc" }}
+    {{ partial "publication.html" . }}
+  {{ end }}
+{{ else }}
+  <p>No publications are tagged with this direction yet.</p>
+{{ end }}

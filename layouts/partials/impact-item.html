@@ -1,0 +1,18 @@
+{{ $citedTitle := "" }}
+{{ range where hugo.Data.publications "id" .cited_work_id }}
+  {{ $citedTitle = .title }}
+{{ end }}
+{{ $topics := delimit (.research_topics | default slice) " " }}
+<article class="publication" data-filter-item data-category="{{ .relationship_category }}" data-topics="{{ $topics }}" data-search="{{ printf "%s %s %s %s" .title .authors .venue .relationship_summary }}">
+  <h3>{{ .title }}</h3>
+  <p class="meta">{{ .authors }}</p>
+  <p class="meta">{{ .venue }} · {{ .year }} · {{ .relationship_category }}</p>
+  <p>{{ .relationship_summary }}</p>
+  {{ with $citedTitle }}
+    <p class="meta">Cites <a href="{{ printf "publications/#%s" $.cited_work_id | relURL }}">{{ . }}</a></p>
+  {{ end }}
+  <p class="publication-links">
+    {{ with .paper_url }}<a href="{{ . }}">Paper</a>{{ end }}
+    {{ with .doi }}<a href="{{ . }}">DOI</a>{{ end }}
+  </p>
+</article>

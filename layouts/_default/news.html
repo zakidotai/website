@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ $news := sort hugo.Data.news "date" "desc" }}
+{{ if $news }}
+  {{ range $news }}
+    <article class="news-item">
+      <h2>{{ .title }}</h2>
+      <p class="meta"><time datetime="{{ .date }}">{{ partial "date.html" .date }}</time></p>
+      <p>{{ .description }}</p>
+      {{ with .url }}<p><a href="{{ . }}">Read more</a></p>{{ end }}
+    </article>
+  {{ end }}
+{{ else }}
+  <p>No news yet.</p>
+{{ end }}
+{{ end }}

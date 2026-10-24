@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ $talks := sort hugo.Data.conferences "order" "asc" }}
+{{ $years := slice }}
+{{ range $talks }}
+  {{ $years = $years | append .year }}
+{{ end }}
+{{ range $years | uniq }}
+  {{ $year := . }}
+  <h2>{{ $year }}</h2>
+  {{ range where $talks "year" $year }}
+    {{ partial "conference.html" . }}
+  {{ end }}
+{{ end }}
+{{ end }}

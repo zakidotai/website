@@ -1,0 +1,11 @@
+# News taken from dated CV facts. Add new entries at the top. date is YYYY-MM-DD. url is optional.
+- date: '2026-02-27'
+  title: LLaMat published in Nature Machine Intelligence
+  description: A family of large language models for materials research, with a study of model adaptability
+    in continued pre-training.
+  url: ''
+- date: '2025-02-01'
+  title: Joined Johns Hopkins University as a postdoctoral researcher
+  description: 'Hopkins Extreme Materials Institute. Topic: discovering materials for extreme environments
+    through agentic AI, with Prof. Michael D. Shields.'
+  url: ''

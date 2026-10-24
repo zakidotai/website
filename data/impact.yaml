@@ -1,0 +1,22 @@
+# Research impact. The public site shows records with verified: true only.
+# A citation is not enough. Write relationship_summary after reading the paper.
+# relationship_category must be one of:
+#   Methods Extended, Applications, Follow-up Research,
+#   Independent Validation, Dataset or Software Reuse
+# cited_work_id must match an id in publications.yaml.
+# Candidate records from OpenAlex, Semantic Scholar, or Crossref stay verified: false
+# until they are reviewed. Do not scrape Google Scholar.
+- title: '[Sample fixture] Not a real paper'
+  authors: Sample Author
+  year: 2024
+  venue: Sample Venue
+  paper_url: ''
+  doi: ''
+  cited_work_id: gupta2022matscibert
+  relationship_category: Methods Extended
+  relationship_summary: This unverified fixture must not appear on the public site.
+  evidence_note: Delete this record or replace it after manual review. Do not mark it verified.
+  verified: false
+  featured: false
+  research_topics:
+  - materials-ai

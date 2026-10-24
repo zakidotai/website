@@ -1,0 +1,42 @@
+# Courses transcribed from the CV. The teaching block names IIT Delhi.
+# role is "Teaching" because the CV does not state instructor or assistant.
+# resources can list notes or slides, for example:
+#   - label: Notes
+#     url: https://example.org/notes
+- id: cvp441
+  code: CVP441
+  title: Structural Design and Detailing
+  institution: Indian Institute of Technology Delhi
+  years: 2020–2023
+  role: Teaching
+  audience: 100 students, undergraduate
+  description: Designing structures in STAAD Pro and drawing in AutoCAD.
+  resources: []
+- id: cvl757
+  code: CVL757
+  title: Finite Element Methods in Structural Engineering
+  institution: Indian Institute of Technology Delhi
+  years: 2021–2022
+  role: Teaching
+  audience: 30 students, undergraduate, master’s, and PhD
+  description: Introduced Python programming assignments for finite element analysis.
+  resources: []
+- id: mll703
+  code: MLL703
+  title: Mathematical and Computational Methods in Materials
+  institution: Indian Institute of Technology Delhi
+  years: 2020–2021
+  role: Teaching
+  audience: 30 students, master’s and PhD
+  description: Numerical differentiation and integration, with MATLAB and Python programming assignments.
+  resources: []
+- id: ell409
+  code: ELL409 and ELL784
+  title: Introduction to Machine Learning
+  institution: Indian Institute of Technology Delhi
+  years: 2020–2021
+  role: Teaching
+  audience: 60 students, undergraduate (ELL409) and postgraduate (ELL784)
+  description: Logistic support and a hands-on session on the high performance computing cluster at IIT
+    Delhi.
+  resources: []

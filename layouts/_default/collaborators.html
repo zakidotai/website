@@ -1,0 +1,23 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ $people := where (hugo.Data.collaborators | default slice) "verified" true }}
+{{ if $people }}
+  {{ range $people }}
+    <article>
+      <h2>{{ .name }}</h2>
+      <p class="meta">{{ .affiliation }}{{ with .area }} · {{ . }}{{ end }}</p>
+      {{ with .url }}<p><a href="{{ . }}">Website</a></p>{{ end }}
+      {{ $name := .name }}
+      {{ with .photo }}<img src="{{ . | relURL }}" alt="Portrait of {{ $name }}">{{ end }}
+      {{ with .projects }}
+        <ul class="stack">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      {{ end }}
+    </article>
+  {{ end }}
+{{ else }}
+  <p>No verified collaborators have been added yet. People are listed here only after the collaboration is confirmed. Coauthors are not added from the publication list.</p>
+{{ end }}
+{{ end }}

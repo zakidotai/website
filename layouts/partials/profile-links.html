@@ -1,0 +1,9 @@
+{{ $profile := hugo.Data.profile }}
+<ul class="inline-links">
+  {{ with $profile.email }}<li><a href="mailto:{{ . }}">Email</a></li>{{ end }}
+  {{ with $profile.links.scholar }}<li><a href="{{ . }}">Google Scholar</a></li>{{ end }}
+  {{ with $profile.links.orcid }}<li><a href="{{ . }}">ORCID</a></li>{{ end }}
+  {{ with $profile.links.github }}<li><a href="{{ . }}">GitHub</a></li>{{ end }}
+  {{ with $profile.links.linkedin }}<li><a href="{{ . }}">LinkedIn</a></li>{{ end }}
+  {{ with $profile.links.website }}<li><a href="{{ . }}">{{ $profile.links.website_label | default "Website" }}</a></li>{{ end }}
+</ul>

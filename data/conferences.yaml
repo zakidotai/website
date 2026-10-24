@@ -1,0 +1,174 @@
+# Talks transcribed from the CV. order 1 is the newest.
+# dates are the dates printed on the CV. They are not labeled completed or upcoming.
+# format is set only when the CV says Oral or Poster.
+- id: wccm-2026
+  order: 1
+  year: 2026
+  name: 17th World Congress on Computational Mechanics and 10th European Congress on Computational Methods
+    in Applied Sciences and Engineering
+  location: Munich, Germany
+  dates: July 19–24, 2026
+  talks:
+  - title: Uncertainty Quantification of Foundation Models for Scientific Machine Learning
+    format: ''
+- id: ai4mat-iclr-2026
+  order: 2
+  year: 2026
+  name: AI4MAT workshop at ICLR 2026
+  location: Rio de Janeiro, Brazil
+  dates: April 26, 2026
+  talks:
+  - title: Materials Research Agent
+    format: ''
+- id: siam-uq-2026
+  order: 3
+  year: 2026
+  name: SIAM Conference on Uncertainty Quantification
+  location: Minneapolis, Minnesota
+  dates: March 22–25, 2026
+  talks:
+  - title: Uncertainty quantification across the lifecycle of foundation models for scientific machine
+      learning
+    format: ''
+- id: jhu-hpc-2025
+  order: 4
+  year: 2025
+  name: Inaugural High Performance Computing Symposium, Johns Hopkins University
+  location: Johns Hopkins University
+  dates: April 2, 2025
+  talks:
+  - title: Automated information extraction for ceramic materials
+    format: ''
+- id: consec-2024
+  order: 5
+  year: 2024
+  name: 10th International Conference on Concrete under Severe Conditions — Environment and Loading
+  location: ''
+  dates: September 25–27, 2024
+  talks:
+  - title: AI Driven Information Extraction From Construction Materials Literature
+    format: ''
+- id: emi-2024
+  order: 6
+  year: 2024
+  name: Engineering Mechanics Institute Conference 2024
+  location: Chicago, Illinois, USA
+  dates: May 28–31, 2024
+  talks:
+  - title: 'CEMCAT: Cementitious materials catalogue with their compositions, properties, synthesis and
+      characterization methods, and applications'
+    format: ''
+- id: gomd-2024
+  order: 7
+  year: 2024
+  name: Glass and Optical Materials Division Meeting (GOMD 2024)
+  location: Las Vegas, Nevada, USA
+  dates: May 19–24, 2024
+  talks:
+  - title: Extracting materials tetrahedron of inorganic glasses using natural language processing
+    format: ''
+- id: mrs-fall-2023
+  order: 8
+  year: 2023
+  name: 2023 Materials Research Society Meeting and Exhibit
+  location: Boston, Massachusetts, USA
+  dates: November 26–December 1, 2023
+  talks:
+  - title: Large language models for materials science education and research
+    format: ''
+  - title: Information extraction from materials science research papers
+    format: ''
+- id: acl-2023
+  order: 9
+  year: 2023
+  name: 61st Annual Meeting of the Association for Computational Linguistics
+  location: Toronto, Canada
+  dates: '2023'
+  talks:
+  - title: 'DiSCoMaT: Distantly Supervised Composition Extraction from Tables in Materials Science Articles'
+    format: ''
+- id: gomd-2023
+  order: 10
+  year: 2023
+  name: Glass and Optical Materials Division Meeting (GOMD 2023)
+  location: New Orleans, Louisiana, USA
+  dates: June 4–8, 2023
+  talks:
+  - title: Automated extraction of glass compositions and properties from research literature
+    format: Oral
+- id: emi-2023
+  order: 11
+  year: 2023
+  name: Engineering Mechanics Institute Conference 2023
+  location: Atlanta, Georgia, USA
+  dates: June 6–10, 2023
+  talks:
+  - title: Investigating large language models’ understanding of mechanics
+    format: Oral
+- id: mrs-spring-2023
+  order: 12
+  year: 2023
+  name: 2023 Materials Research Society Meeting and Exhibit
+  location: San Francisco, California, USA
+  dates: April 10–14, 2023
+  talks:
+  - title: Extracting materials compositions from research papers using natural language processing
+    format: Oral
+- id: icg-2022
+  order: 13
+  year: 2022
+  name: 26th International Congress on Glass
+  location: Online
+  dates: '2022'
+  talks:
+  - title: Predicting Vickers hardness of glasses as a function of processing parameters
+    format: Oral
+  - title: Predicting optical properties of glasses as a function of testing parameters
+    format: Oral
+- id: sisecam-2022
+  order: 14
+  year: 2022
+  name: Şişecam 37th International Glass Conference
+  location: Istanbul, Turkey
+  dates: '2022'
+  talks:
+  - title: Machine learning based predictions and explanations of glass properties as a function of composition,
+      testing, and processing parameters
+    format: Poster
+- id: gomd-2022
+  order: 15
+  year: 2022
+  name: Pacific Rim Conference on Ceramic and Glass Technology, including the Glass and Optical Materials
+    Division Meeting (GOMD 2022)
+  location: Online
+  dates: '2022'
+  talks:
+  - title: Predicting electrical properties of glasses as a function of composition and wavelengths
+    format: Oral
+- id: gomd-2021
+  order: 16
+  year: 2021
+  name: Pacific Rim Conference on Ceramic and Glass Technology, including the Glass and Optical Materials
+    Division Meeting (GOMD 2021)
+  location: Online
+  dates: '2021'
+  talks:
+  - title: Predicting normal and anomalous glasses directly from the indent images using machine learning
+    format: Oral
+  - title: Extracting the synthesis and processing protocols from materials science literature for improved
+      property prediction
+    format: Oral
+  - title: Understanding the optical properties of glasses using interpretable machine learning
+    format: Oral
+- id: mst-2021
+  order: 17
+  year: 2021
+  name: Materials Science and Technology 2021 (MS&T21)
+  location: Online
+  dates: '2021'
+  talks:
+  - title: Elucidating compositional governance of optical properties of oxide glasses using interpretable
+      machine learning
+    format: Oral
+  - title: Predicting glass behavior from optical microscopy images using interpretable machine learning
+    format: Oral

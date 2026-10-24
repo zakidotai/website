@@ -1,0 +1,14 @@
+{{ $profile := hugo.Data.profile }}
+{{ $description := .Description | default $profile.site_description }}
+{{ $title := cond .IsHome $profile.name (printf "%s · %s" .Title $profile.name) }}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ .Name }}">
+{{ end }}
+{{ partial "person-schema.html" . }}

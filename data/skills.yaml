@@ -1,0 +1,7 @@
+# Skills transcribed from the CV.
+- group: Programming languages
+  items: Python, C, FORTRAN
+- group: Tools
+  items: Cursor, MATLAB, OpenSees, AutoCAD, STAAD Pro, Revit Architecture
+- group: Robotic platforms
+  items: Arduino, Raspberry Pi, NVIDIA Jetson Nano

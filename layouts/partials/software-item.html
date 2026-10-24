@@ -1,0 +1,10 @@
+<article>
+  <h3>{{ .name }}</h3>
+  <p>{{ .description }}</p>
+  <p class="publication-links">
+    {{ with .github }}<a href="{{ . }}">GitHub</a>{{ end }}
+    {{ with .documentation }}<a href="{{ . }}">Documentation</a>{{ end }}
+    {{ with .paper }}<a href="{{ . }}">Paper</a>{{ end }}
+    {{ with .dataset }}<a href="{{ . }}">Dataset</a>{{ end }}
+  </p>
+</article>

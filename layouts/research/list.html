@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ range hugo.Data.research }}
+  <article>
+    <h2><a href="{{ .url | relURL }}">{{ .title }}</a></h2>
+    <p>{{ .summary }}</p>
+  </article>
+{{ end }}
+{{ end }}

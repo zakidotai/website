@@ -1,0 +1,7 @@
+{{ $profile := hugo.Data.profile }}
+<footer class="site-footer">
+  <div class="wrap">
+    <p>{{ $profile.name }}{{ with $profile.affiliation }}, {{ . }}{{ end }}</p>
+    {{ partial "profile-links.html" . }}
+  </div>
+</footer>

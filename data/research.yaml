@@ -1,0 +1,20 @@
+# Research directions. url is a site path without a leading slash.
+- id: materials-ai
+  title: Materials AI and Scientific Language Models
+  summary: Scientific language models and methods for reading, extracting, and organizing knowledge from
+    the materials literature.
+  url: research/materials-ai/
+- id: explainable-ai
+  title: Explainable AI and Materials Informatics
+  summary: Interpretable models that connect composition, processing, structure, and properties of engineering
+    materials.
+  url: research/explainable-ai/
+- id: structural-resilience
+  title: Structural Resilience and Earthquake Engineering
+  summary: Data-driven methods for cementitious materials, structural response, and resilient infrastructure.
+  url: research/structural-resilience/
+- id: scientific-ml
+  title: Scientific Machine Learning and Uncertainty Quantification
+  summary: Scientific machine learning, reproducible research software, and uncertainty in engineering
+    models.
+  url: research/scientific-ml/

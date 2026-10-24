@@ -1,0 +1,34 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<h2>Courses</h2>
+{{ range hugo.Data.teaching }}
+  <article class="course" id="{{ .id }}">
+    <h3>{{ .code }}: {{ .title }}</h3>
+    <p class="meta">{{ .institution }} · {{ .years }} · {{ .role }}</p>
+    {{ with .audience }}<p class="meta">{{ . }}</p>{{ end }}
+    <p>{{ .description }}</p>
+    {{ with .resources }}
+      <ul class="inline-links">
+        {{ range . }}
+          <li><a href="{{ .url }}">{{ .label }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </article>
+{{ else }}
+  <p>No courses have been added yet.</p>
+{{ end }}
+
+<h2>Tutorials and workshops</h2>
+<p>Nothing has been added here yet.</p>
+
+<h2>Student mentoring</h2>
+<p>Nothing has been added here yet.</p>
+
+<h2>Research supervision</h2>
+<p>Nothing has been added here yet.</p>
+
+<h2>Educational outreach</h2>
+<p>Nothing has been added here yet.</p>
+{{ end }}

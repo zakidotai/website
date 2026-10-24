@@ -1,0 +1,462 @@
+# Publications transcribed from 003_zaki_cv_20260904.pdf.
+# Empty doi, url, pdf, code, and dataset fields were not given on the CV. Do not invent them.
+# Set open_access: true only when the version is legally shareable.
+# featured: true places the paper in the homepage selection.
+# topics: materials-ai, explainable-ai, structural-resilience, scientific-ml.
+- id: zaki2026llamat
+  title: 'LLaMat: A family of large language models for materials research with insights into model adaptability
+    in continued pre-training'
+  authors: Zaki M, Ahlawat D, Mishra V, Singh S, Bihani V, Grover H, Mishra B, Miret S, Mausam M, Krishnan
+    NMA
+  year: 2026
+  venue: Nature Machine Intelligence
+  detail: 2026 Feb 27; 1–14
+  type: journal
+  topics: &id001
+  - materials-ai
+  doi: ''
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: true
+  open_access: false
+  bibtex: "@article{zaki2026llamat,\n  title = {LLaMat: A family of large language models for materials\
+    \ research with insights into model adaptability in continued pre-training},\n  author = {Zaki M,\
+    \ Ahlawat D, Mishra V, Singh S, Bihani V, Grover H, Mishra B, Miret S, Mausam M, Krishnan NMA},\n\
+    \  year = {2026},\n  journal = {Nature Machine Intelligence},\n}"
+- id: mandal2025afm-agents
+  title: Evaluating large language model agents for automation of atomic force microscopy
+  authors: Mandal I, Soni J, Zaki M, Smedskjaer MM, Wondraczek K, Wondraczek L, Gosvami NN, Krishnan NMA
+  year: 2025
+  venue: Nature Communications
+  detail: '2025 Oct 14; 16(1): 9104'
+  type: journal
+  topics: *id001
+  doi: ''
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{mandal2025afm-agents,\n  title = {Evaluating large language model agents for automation\
+    \ of atomic force microscopy},\n  author = {Mandal I, Soni J, Zaki M, Smedskjaer MM, Wondraczek K,\
+    \ Wondraczek L, Gosvami NN, Krishnan NMA},\n  year = {2025},\n  journal = {Nature Communications},\n\
+    }"
+- id: hira2025matskraft
+  title: 'MatSKRAFT: A framework for large-scale materials knowledge extraction from scientific tables'
+  authors: Hira K, Zaki M, Krishnan NMA, Mausam M
+  year: 2025
+  venue: arXiv preprint arXiv:2509.10448
+  detail: 2025 Sep 12
+  type: preprint
+  topics: *id001
+  doi: ''
+  url: https://arxiv.org/abs/2509.10448
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@misc{hira2025matskraft,\n  title = {MatSKRAFT: A framework for large-scale materials knowledge\
+    \ extraction from scientific tables},\n  author = {Hira K, Zaki M, Krishnan NMA, Mausam M},\n  year\
+    \ = {2025},\n  howpublished = {arXiv preprint arXiv:2509.10448},\n  url = {https://arxiv.org/abs/2509.10448},\n\
+    }"
+- id: zaki2025cement-chapter
+  title: Artificial intelligence for information extraction from cement literature
+  authors: Zaki M, Bharadwaj K, Goyal R, Jayadeva J, Krishnan NMA
+  year: 2025
+  venue: Binding Materials for Sustainable Construction, Woodhead Publishing
+  detail: pp. 819–832
+  type: chapter
+  topics: *id001
+  doi: ''
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@incollection{zaki2025cement-chapter,\n  title = {Artificial intelligence for information extraction\
+    \ from cement literature},\n  author = {Zaki M, Bharadwaj K, Goyal R, Jayadeva J, Krishnan NMA},\n\
+    \  year = {2025},\n  booktitle = {Binding Materials for Sustainable Construction, Woodhead Publishing},\n\
+    }"
+- id: mishra2024llamat-workshop
+  title: 'LLaMaT: Large Language Model for Materials Science'
+  authors: Mishra V, Singh S, Zaki M, Grover HS, Miret S, Mausam, Krishnan NMA
+  year: 2024
+  venue: AI4MAT Workshop, BOKU Vienna
+  detail: Accepted, July 2024
+  type: conference
+  topics: *id001
+  doi: ''
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@inproceedings{mishra2024llamat-workshop,\n  title = {LLaMaT: Large Language Model for Materials\
+    \ Science},\n  author = {Mishra V, Singh S, Zaki M, Grover HS, Miret S, Mausam, Krishnan NMA},\n \
+    \ year = {2024},\n  booktitle = {AI4MAT Workshop, BOKU Vienna},\n}"
+- id: zaki2024mascqa
+  title: 'MaScQA: Investigating Materials Science Knowledge of Large Language Models'
+  authors: Zaki M, Jayadeva J, Mausam M, Anoop Krishnan NM
+  year: 2024
+  venue: Digital Discovery
+  detail: ''
+  type: journal
+  topics: *id001
+  doi: https://doi.org/10.1039/D3DD00188A
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: true
+  open_access: false
+  bibtex: "@article{zaki2024mascqa,\n  title = {MaScQA: Investigating Materials Science Knowledge of Large\
+    \ Language Models},\n  author = {Zaki M, Jayadeva J, Mausam M, Anoop Krishnan NM},\n  year = {2024},\n\
+    \  journal = {Digital Discovery},\n  doi = {10.1039/D3DD00188A},\n}"
+- id: zaki2023glassomics
+  title: 'Glassomics: An omics approach toward understanding glasses through modeling, simulations, and
+    artificial intelligence'
+  authors: Zaki M, Jan A, Krishnan NMA, Mauro JC
+  year: 2023
+  venue: MRS Bulletin
+  detail: ''
+  type: journal
+  topics: *id001
+  doi: https://doi.org/10.1557/s43577-023-00560-1
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: true
+  open_access: false
+  bibtex: "@article{zaki2023glassomics,\n  title = {Glassomics: An omics approach toward understanding\
+    \ glasses through modeling, simulations, and artificial intelligence},\n  author = {Zaki M, Jan A,\
+    \ Krishnan NMA, Mauro JC},\n  year = {2023},\n  journal = {MRS Bulletin},\n  doi = {10.1557/s43577-023-00560-1},\n\
+    }"
+- id: hira2024tetrahedron
+  title: 'Reconstructing materials tetrahedron: Challenges in materials information extraction'
+  authors: Hira K, Zaki M, Sheth D, Krishnan N, others
+  year: 2024
+  venue: Digital Discovery, special issue on AI4MAT NeurIPS-2023
+  detail: Accepted, 2024
+  type: journal
+  topics: *id001
+  doi: ''
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{hira2024tetrahedron,\n  title = {Reconstructing materials tetrahedron: Challenges\
+    \ in materials information extraction},\n  author = {Hira K, Zaki M, Sheth D, Krishnan N, others},\n\
+    \  year = {2024},\n  journal = {Digital Discovery, special issue on AI4MAT NeurIPS-2023},\n}"
+- id: mannan2023hardness
+  title: 'Glass hardness: Predicting composition and load effects via symbolic reasoning-informed machine
+    learning'
+  authors: Mannan S, Zaki M, Bishnoi S, et al.
+  year: 2023
+  venue: Acta Materialia
+  detail: '255: 119046'
+  type: journal
+  topics: &id002
+  - explainable-ai
+  doi: https://doi.org/10.1016/j.actamat.2023.119046
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{mannan2023hardness,\n  title = {Glass hardness: Predicting composition and load effects\
+    \ via symbolic reasoning-informed machine learning},\n  author = {Mannan S, Zaki M, Bishnoi S, et\
+    \ al.},\n  year = {2023},\n  journal = {Acta Materialia},\n  doi = {10.1016/j.actamat.2023.119046},\n\
+    }"
+- id: zaki2023cementron
+  title: 'Cementron: Machine learning the alite and belite phases in cement clinker from optical images'
+  authors: Zaki M, Sharma S, Gurjar SK, Goyal R, Krishnan NA, others
+  year: 2023
+  venue: Construction and Building Materials
+  detail: '397: 132425'
+  type: journal
+  topics:
+  - materials-ai
+  - structural-resilience
+  doi: ''
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: true
+  open_access: false
+  bibtex: "@article{zaki2023cementron,\n  title = {Cementron: Machine learning the alite and belite phases\
+    \ in cement clinker from optical images},\n  author = {Zaki M, Sharma S, Gurjar SK, Goyal R, Krishnan\
+    \ NA, others},\n  year = {2023},\n  journal = {Construction and Building Materials},\n}"
+- id: gupta2023discomat
+  title: 'DiSCoMaT: Distantly supervised composition extraction from tables in materials science articles'
+  authors: Gupta T, Zaki M, Khatsuriya D, Hira K, Krishnan NMA, Mausam M
+  year: 2023
+  venue: 'Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume
+    1: Long Papers)'
+  detail: pp. 13465–13483, Toronto, Canada
+  type: conference
+  topics: *id001
+  doi: https://doi.org/10.18653/v1/2023.acl-long.753
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: true
+  open_access: false
+  bibtex: "@inproceedings{gupta2023discomat,\n  title = {DiSCoMaT: Distantly supervised composition extraction\
+    \ from tables in materials science articles},\n  author = {Gupta T, Zaki M, Khatsuriya D, Hira K,\
+    \ Krishnan NMA, Mausam M},\n  year = {2023},\n  booktitle = {Proceedings of the 61st Annual Meeting\
+    \ of the Association for Computational Linguistics (Volume 1: Long Papers)},\n  doi = {10.18653/v1/2023.acl-long.753},\n\
+    }"
+- id: singla2023chalcogenide
+  title: Accelerated design of chalcogenide glasses through interpretable machine learning for composition–property
+    relationships
+  authors: Singla S, Mannan S, Zaki M, Krishnan NA
+  year: 2023
+  venue: 'Journal of Physics: Materials'
+  detail: '6(2): 024003'
+  type: journal
+  topics: *id002
+  doi: ''
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{singla2023chalcogenide,\n  title = {Accelerated design of chalcogenide glasses through\
+    \ interpretable machine learning for composition–property relationships},\n  author = {Singla S, Mannan\
+    \ S, Zaki M, Krishnan NA},\n  year = {2023},\n  journal = {Journal of Physics: Materials},\n}"
+- id: zaki2022afm-tip
+  title: Interpretable Machine Learning Approach for Identifying the Tip Sharpness in Atomic Force Microscopy
+  authors: Zaki M, Kasimuthumaniyan S, Sahoo S, Jayadeva, Gosvami NN, Krishnan NMA
+  year: 2022
+  venue: Scripta Materialia
+  detail: '221: 114965'
+  type: journal
+  topics: *id002
+  doi: https://doi.org/10.1016/j.scriptamat.2022.114965
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: true
+  open_access: false
+  bibtex: "@article{zaki2022afm-tip,\n  title = {Interpretable Machine Learning Approach for Identifying\
+    \ the Tip Sharpness in Atomic Force Microscopy},\n  author = {Zaki M, Kasimuthumaniyan S, Sahoo S,\
+    \ Jayadeva, Gosvami NN, Krishnan NMA},\n  year = {2022},\n  journal = {Scripta Materialia},\n  doi\
+    \ = {10.1016/j.scriptamat.2022.114965},\n}"
+- id: bhattoo2023composition
+  title: Understanding the compositional control on electrical, mechanical, optical, and physical properties
+    of inorganic glasses with interpretable machine learning
+  authors: Bhattoo R, Bishnoi S, Zaki M, Krishnan NMA
+  year: 2023
+  venue: Acta Materialia
+  detail: '242: 118439'
+  type: journal
+  topics: *id002
+  doi: https://doi.org/10.1016/j.actamat.2022.118439
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{bhattoo2023composition,\n  title = {Understanding the compositional control on electrical,\
+    \ mechanical, optical, and physical properties of inorganic glasses with interpretable machine learning},\n\
+    \  author = {Bhattoo R, Bishnoi S, Zaki M, Krishnan NMA},\n  year = {2023},\n  journal = {Acta Materialia},\n\
+    \  doi = {10.1016/j.actamat.2022.118439},\n}"
+- id: zaki2022structure-factor
+  title: Natural language processing-guided meta-analysis and structure factor database extraction from
+    glass literature
+  authors: Zaki M, Namireddy SR, Pittie T, et al.
+  year: 2022
+  venue: 'Journal of Non-Crystalline Solids: X'
+  detail: '15: 100103'
+  type: journal
+  topics: *id001
+  doi: https://doi.org/10.1016/j.nocx.2022.100103
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{zaki2022structure-factor,\n  title = {Natural language processing-guided meta-analysis\
+    \ and structure factor database extraction from glass literature},\n  author = {Zaki M, Namireddy\
+    \ SR, Pittie T, et al.},\n  year = {2022},\n  journal = {Journal of Non-Crystalline Solids: X},\n\
+    \  doi = {10.1016/j.nocx.2022.100103},\n}"
+- id: gupta2022matscibert
+  title: 'MatSciBERT: A materials domain language model for text mining and information extraction'
+  authors: Gupta T, Zaki M, Krishnan NMA, Mausam M
+  year: 2022
+  venue: npj Computational Materials
+  detail: '8(1): 102'
+  type: journal
+  topics: *id001
+  doi: https://doi.org/10.1038/s41524-022-00784-w
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: true
+  open_access: false
+  bibtex: "@article{gupta2022matscibert,\n  title = {MatSciBERT: A materials domain language model for\
+    \ text mining and information extraction},\n  author = {Gupta T, Zaki M, Krishnan NMA, Mausam M},\n\
+    \  year = {2022},\n  journal = {npj Computational Materials},\n  doi = {10.1038/s41524-022-00784-w},\n\
+    }"
+- id: zaki2022optical
+  title: Interpreting the optical properties of oxide glasses with machine learning and Shapely additive
+    explanations
+  authors: Zaki M, Venugopal V, Bhattoo R, et al.
+  year: 2022
+  venue: Journal of the American Ceramic Society
+  detail: '105(6): 4046–4057'
+  type: journal
+  topics: *id002
+  doi: ''
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: true
+  open_access: false
+  bibtex: "@article{zaki2022optical,\n  title = {Interpreting the optical properties of oxide glasses\
+    \ with machine learning and Shapely additive explanations},\n  author = {Zaki M, Venugopal V, Bhattoo\
+    \ R, et al.},\n  year = {2022},\n  journal = {Journal of the American Ceramic Society},\n}"
+- id: lyngdoh2020csh
+  title: Elucidating the constitutive relationship of calcium–silicate–hydrate gel using high throughput
+    reactive molecular simulations and machine learning
+  authors: Lyngdoh GA, Li H, Zaki M, Krishnan NMA, Das S
+  year: 2020
+  venue: Scientific Reports
+  detail: '10(1): 21336'
+  type: journal
+  topics:
+  - structural-resilience
+  - scientific-ml
+  doi: https://doi.org/10.1038/s41598-020-78368-1
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{lyngdoh2020csh,\n  title = {Elucidating the constitutive relationship of calcium–silicate–hydrate\
+    \ gel using high throughput reactive molecular simulations and machine learning},\n  author = {Lyngdoh\
+    \ GA, Li H, Zaki M, Krishnan NMA, Das S},\n  year = {2020},\n  journal = {Scientific Reports},\n \
+    \ doi = {10.1038/s41598-020-78368-1},\n}"
+- id: ravinder2021challenges
+  title: 'Artificial intelligence and machine learning in glass science and technology: 21 challenges
+    for the 21st century'
+  authors: Ravinder, Venugopal V, Bishnoi S, … Zaki M, … et al.
+  year: 2021
+  venue: International Journal of Applied Glass Science
+  detail: '12(3): 277–292'
+  type: journal
+  topics: *id001
+  doi: https://doi.org/10.1111/ijag.15881
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{ravinder2021challenges,\n  title = {Artificial intelligence and machine learning in\
+    \ glass science and technology: 21 challenges for the 21st century},\n  author = {Ravinder, Venugopal\
+    \ V, Bishnoi S, … Zaki M, … et al.},\n  year = {2021},\n  journal = {International Journal of Applied\
+    \ Glass Science},\n  doi = {10.1111/ijag.15881},\n}"
+- id: venugopal2021looking
+  title: 'Looking through glass: Knowledge discovery from materials science literature using natural language
+    processing'
+  authors: Venugopal V, Sahoo S, Zaki M, Agarwal M, Gosvami NN, Krishnan NMA
+  year: 2021
+  venue: Patterns
+  detail: '2(7): 100290'
+  type: journal
+  topics: *id001
+  doi: https://doi.org/10.1016/j.patter.2021.100290
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: true
+  open_access: false
+  bibtex: "@article{venugopal2021looking,\n  title = {Looking through glass: Knowledge discovery from\
+    \ materials science literature using natural language processing},\n  author = {Venugopal V, Sahoo\
+    \ S, Zaki M, Agarwal M, Gosvami NN, Krishnan NMA},\n  year = {2021},\n  journal = {Patterns},\n  doi\
+    \ = {10.1016/j.patter.2021.100290},\n}"
+- id: sharma2021cost
+  title: Machine learning-aided cost prediction and optimization in construction operations
+  authors: Sharma V, Zaki M, Jha KN, Krishnan NMA
+  year: 2021
+  venue: Engineering, Construction and Architectural Management
+  detail: ''
+  type: journal
+  topics:
+  - structural-resilience
+  doi: https://doi.org/10.1108/ECAM-10-2020-0778
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{sharma2021cost,\n  title = {Machine learning-aided cost prediction and optimization\
+    \ in construction operations},\n  author = {Sharma V, Zaki M, Jha KN, Krishnan NMA},\n  year = {2021},\n\
+    \  journal = {Engineering, Construction and Architectural Management},\n  doi = {10.1108/ECAM-10-2020-0778},\n\
+    }"
+- id: zaki2022processing
+  title: Extracting processing and testing parameters from materials science literature for improved property
+    prediction of glasses
+  authors: Zaki M, Jayadeva, Krishnan NMA
+  year: 2022
+  venue: Chemical Engineering and Processing - Process Intensification
+  detail: '180: 108607'
+  type: journal
+  topics:
+  - materials-ai
+  - explainable-ai
+  doi: https://doi.org/10.1016/j.cep.2021.108607
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{zaki2022processing,\n  title = {Extracting processing and testing parameters from\
+    \ materials science literature for improved property prediction of glasses},\n  author = {Zaki M,\
+    \ Jayadeva, Krishnan NMA},\n  year = {2022},\n  journal = {Chemical Engineering and Processing - Process\
+    \ Intensification},\n  doi = {10.1016/j.cep.2021.108607},\n}"
+- id: lyngdoh2022concrete
+  title: Prediction of concrete strengths enabled by missing data imputation and interpretable machine
+    learning
+  authors: Lyngdoh GA, Zaki M, Krishnan NMA, Das S
+  year: 2022
+  venue: Cement and Concrete Composites
+  detail: '128: 104414'
+  type: journal
+  topics:
+  - explainable-ai
+  - structural-resilience
+  doi: https://doi.org/10.1016/j.cemconcomp.2022.104414
+  url: ''
+  pdf: ''
+  code: ''
+  dataset: ''
+  featured: false
+  open_access: false
+  bibtex: "@article{lyngdoh2022concrete,\n  title = {Prediction of concrete strengths enabled by missing\
+    \ data imputation and interpretable machine learning},\n  author = {Lyngdoh GA, Zaki M, Krishnan NMA,\
+    \ Das S},\n  year = {2022},\n  journal = {Cement and Concrete Composites},\n  doi = {10.1016/j.cemconcomp.2022.104414},\n\
+    }"

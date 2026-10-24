@@ -1,0 +1,30 @@
+{{ $labels := dict "journal" "Journal article" "conference" "Conference paper" "preprint" "Preprint" "chapter" "Book chapter" "other" "Other" }}
+{{ $topics := delimit (.topics | default slice) " " }}
+{{ $search := printf "%s %s %s %s" .title .authors .venue $topics }}
+<article class="publication" id="{{ .id }}" data-filter-item data-type="{{ .type }}" data-topics="{{ $topics }}" data-search="{{ $search }}">
+  <h3 class="publication-title">{{ .title }}</h3>
+  <p class="meta">{{ .authors }}</p>
+  <p class="meta">
+    {{ .venue }}{{ with .detail }}, {{ . }}{{ end }}
+    · {{ .year }}
+    · {{ index $labels .type | default .type }}
+    {{ if .featured }} · <span class="badge">Featured</span>{{ end }}
+    {{ if .open_access }} · <span class="badge">Open access</span>{{ end }}
+  </p>
+  <p class="publication-links">
+    {{ with .doi }}<a href="{{ . }}">DOI</a>{{ end }}
+    {{ with .url }}<a href="{{ . }}">{{ if eq $.type "preprint" }}Preprint{{ else }}Publisher{{ end }}</a>{{ end }}
+    {{ with .pdf }}<a href="{{ . }}">PDF</a>{{ end }}
+    {{ with .code }}<a href="{{ . }}">Code</a>{{ end }}
+    {{ with .dataset }}<a href="{{ . }}">Dataset</a>{{ end }}
+    {{ with .bibtex }}
+      <button type="button" class="linkish" data-bibtex-toggle aria-expanded="false" aria-controls="bib-{{ $.id }}">BibTeX</button>
+    {{ end }}
+  </p>
+  {{ with .bibtex }}
+    <div class="bibtex-panel" id="bib-{{ $.id }}" hidden>
+      <pre class="bibtex">{{ . }}</pre>
+      <button type="button" class="linkish" data-bibtex-copy>Copy</button>
+    </div>
+  {{ end }}
+</article>

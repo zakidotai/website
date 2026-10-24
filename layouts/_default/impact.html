@@ -1,0 +1,35 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ $verified := where hugo.Data.impact "verified" true }}
+<div data-filter-root>
+  <div class="filters">
+    <label class="search">Search
+      <input type="search" data-filter-search placeholder="Title, author, or keyword">
+    </label>
+    <label>Relationship
+      <select data-filter-category>
+        <option value="">All relationships</option>
+        <option>Methods Extended</option>
+        <option>Applications</option>
+        <option>Follow-up Research</option>
+        <option>Independent Validation</option>
+        <option>Dataset or Software Reuse</option>
+      </select>
+    </label>
+    <label>Topic
+      <select data-filter-topic>
+        {{ partial "topic-options.html" . }}
+      </select>
+    </label>
+  </div>
+  {{ if $verified }}
+    <p data-filter-empty hidden>No records match this search.</p>
+    {{ range sort $verified "year" "desc" }}
+      {{ partial "impact-item.html" . }}
+    {{ end }}
+  {{ else }}
+    <p>No verified records yet. A citation by itself is not treated as evidence that a study builds on this work. Records appear here after they are reviewed.</p>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,14 @@
+{{ $topic := .Get "topic" }}
+{{ $people := where (hugo.Data.collaborators | default slice) "verified" true }}
+{{ if $people }}
+  {{ $people = where $people "topics" "intersect" (slice $topic) }}
+{{ end }}
+{{ if $people }}
+  <ul class="stack">
+    {{ range $people }}
+      <li>{{ .name }}{{ with .affiliation }}, {{ . }}{{ end }}</li>
+    {{ end }}
+  </ul>
+{{ else }}
+  <p>No verified collaborators are listed for this direction yet.</p>
+{{ end }}

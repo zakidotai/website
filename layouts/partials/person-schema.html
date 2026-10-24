@@ -1,0 +1,15 @@
+{{ $profile := hugo.Data.profile }}
+{{ $same := slice }}
+{{ with $profile.links.github }}{{ $same = $same | append . }}{{ end }}
+{{ with $profile.links.orcid }}{{ $same = $same | append . }}{{ end }}
+{{ with $profile.links.scholar }}{{ $same = $same | append . }}{{ end }}
+{{ with $profile.links.linkedin }}{{ $same = $same | append . }}{{ end }}
+{{ with $profile.links.website }}{{ $same = $same | append . }}{{ end }}
+{{ $person := dict "@context" "https://schema.org" "@type" "Person" "name" $profile.name "jobTitle" $profile.job_title "description" $profile.research_description "email" (printf "mailto:%s" $profile.email) "url" site.Home.Permalink }}
+{{ with $profile.affiliation }}
+  {{ $person = merge $person (dict "affiliation" (dict "@type" "Organization" "name" .)) }}
+{{ end }}
+{{ with $same }}
+  {{ $person = merge $person (dict "sameAs" .) }}
+{{ end }}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>

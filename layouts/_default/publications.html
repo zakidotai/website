@@ -1,0 +1,30 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<div data-filter-root>
+  <div class="filters">
+    <label class="search">Search
+      <input type="search" data-filter-search placeholder="Title, author, venue, or keyword">
+    </label>
+    <label>Type
+      <select data-filter-type>
+        <option value="">All types</option>
+        <option value="journal">Journal articles</option>
+        <option value="conference">Conference papers</option>
+        <option value="preprint">Preprints</option>
+        <option value="chapter">Book chapters</option>
+        <option value="other">Other</option>
+      </select>
+    </label>
+    <label>Topic
+      <select data-filter-topic>
+        {{ partial "topic-options.html" . }}
+      </select>
+    </label>
+  </div>
+  <p data-filter-empty hidden>No publications match this search.</p>
+  {{ $pubs := sort hugo.Data.publications "year" "desc" }}
+  {{ partial "publications-by-year.html" $pubs }}
+</div>
+{{ partial "scholarly.html" . }}
+{{ end }}

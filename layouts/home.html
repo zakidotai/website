@@ -1,0 +1,129 @@
+{{ define "main" }}
+{{ $profile := hugo.Data.profile }}
+<section id="about">
+  {{ with $profile.photo }}
+    <img class="portrait" src="{{ . | relURL }}" alt="Portrait of {{ $profile.name }}">
+  {{ end }}
+  <h1>{{ $profile.name }}</h1>
+  <p class="descriptor">{{ $profile.research_description }}</p>
+  <p class="affiliation">{{ $profile.job_title }}, {{ $profile.affiliation_detail }}, {{ $profile.affiliation }}</p>
+  <p>{{ $profile.biography }}</p>
+  {{ partial "profile-links.html" . }}
+</section>
+
+<section id="interests">
+  <h2>Research interests</h2>
+  {{ range hugo.Data.research }}
+    <article>
+      <h3><a href="{{ .url | relURL }}">{{ .title }}</a></h3>
+      <p>{{ .summary }}</p>
+    </article>
+  {{ end }}
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  {{ $news := sort hugo.Data.news "date" "desc" }}
+  {{ $newsLimit := site.Params.recent_news | default 5 }}
+  {{ if $news }}
+    {{ range first $newsLimit $news }}
+      <article class="news-item">
+        <h3>{{ .title }}</h3>
+        <p class="meta"><time datetime="{{ .date }}">{{ partial "date.html" .date }}</time></p>
+        <p>{{ .description }}</p>
+        {{ with .url }}<p><a href="{{ . }}">Read more</a></p>{{ end }}
+      </article>
+    {{ end }}
+  {{ else }}
+    <p>No news yet.</p>
+  {{ end }}
+  <p><a href="{{ "news/" | relURL }}">News archive</a></p>
+</section>
+
+<section id="publications">
+  <h2>Selected publications</h2>
+  {{ $featured := where hugo.Data.publications "featured" true }}
+  {{ $featured = sort $featured "year" "desc" }}
+  {{ if $featured }}
+    {{ partial "publications-by-year.html" $featured }}
+  {{ else }}
+    <p>No publications have been marked for the homepage yet.</p>
+  {{ end }}
+  <p><a href="{{ "publications/" | relURL }}">All publications</a></p>
+</section>
+
+<section id="impact">
+  <h2>Research building on my work</h2>
+  <p>Selected studies that cite, extend, apply, or independently evaluate my research.</p>
+  {{ $verified := where hugo.Data.impact "verified" true }}
+  {{ $shown := where $verified "featured" true }}
+  {{ if not $shown }}{{ $shown = $verified }}{{ end }}
+  {{ if $shown }}
+    {{ range sort $shown "year" "desc" }}
+      {{ partial "impact-item.html" . }}
+    {{ end }}
+  {{ else }}
+    <p>No verified records yet. A citation by itself is not treated as evidence that a study builds on this work.</p>
+  {{ end }}
+  <p><a href="{{ "research-impact/" | relURL }}">Research impact</a></p>
+</section>
+
+<section id="software">
+  <h2>Software and datasets</h2>
+  {{ $software := where (hugo.Data.software | default slice) "verified" true }}
+  {{ if $software }}
+    {{ range $software }}
+      {{ partial "software-item.html" . }}
+    {{ end }}
+  {{ else }}
+    <p>Verified software and datasets will be listed here.</p>
+  {{ end }}
+</section>
+
+<section id="awards">
+  <h2>Awards and achievements</h2>
+  <ul class="award-list stack">
+    {{ range hugo.Data.awards }}
+      <li><span class="meta">{{ .year }}</span> {{ .title }}</li>
+    {{ end }}
+  </ul>
+</section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+  <ul class="stack">
+    {{ range hugo.Data.teaching }}
+      <li>
+        <a href="{{ printf "teaching/#%s" .id | relURL }}">{{ .code }}: {{ .title }}</a>
+        <span class="meta">{{ .years }}</span>
+      </li>
+    {{ end }}
+  </ul>
+  <p><a href="{{ "teaching/" | relURL }}">Teaching, mentoring, and outreach</a></p>
+</section>
+
+<section id="conferences">
+  <h2>Conferences</h2>
+  {{ $talks := sort hugo.Data.conferences "order" "asc" }}
+  {{ $talkLimit := site.Params.recent_conferences | default 5 }}
+  {{ range first $talkLimit $talks }}
+    {{ partial "conference.html" . }}
+  {{ end }}
+  <p><a href="{{ "conferences/" | relURL }}">All conferences</a></p>
+</section>
+
+<section id="more">
+  <h2>More</h2>
+  <ul class="link-list">
+    <li><a href="{{ "publications/" | relURL }}">Publications</a></li>
+    <li><a href="{{ "research/" | relURL }}">Research</a></li>
+    <li><a href="{{ "collaborators/" | relURL }}">Collaborators</a></li>
+    <li><a href="{{ "teaching/" | relURL }}">Teaching</a></li>
+    <li><a href="{{ "cv/" | relURL }}">CV</a></li>
+    <li><a href="{{ "research-impact/" | relURL }}">Research impact</a></li>
+    <li><a href="{{ "conferences/" | relURL }}">Conferences</a></li>
+    <li><a href="{{ "news/" | relURL }}">News</a></li>
+    {{ with $profile.email }}<li><a href="mailto:{{ . }}">Email</a></li>{{ end }}
+  </ul>
+</section>
+{{ end }}

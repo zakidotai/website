@@ -1,0 +1,61 @@
+# Site configuration.
+# The visible name, biography, and links live in data/profile.yaml.
+# GitHub Actions passes --baseURL for GitHub Pages. For a custom domain, set baseURL
+# here and in the workflow, then add the domain in static/CNAME.
+
+baseURL = "https://example.org/"
+locale = "en"
+title = "Mohd Zaki"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  recent_news = 5
+  recent_conferences = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+          inline = [['\(', '\)']]
+
+[[menus.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+  identifier = "home"
+
+[[menus.main]]
+  name = "Publications"
+  url = "/publications/"
+  weight = 2
+  identifier = "publications"
+
+[[menus.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 3
+  identifier = "research"
+
+[[menus.main]]
+  name = "Collaborators"
+  url = "/collaborators/"
+  weight = 4
+  identifier = "collaborators"
+
+[[menus.main]]
+  name = "Teaching"
+  url = "/teaching/"
+  weight = 5
+  identifier = "teaching"
+
+[[menus.main]]
+  name = "CV"
+  url = "/cv/"
+  weight = 6
+  identifier = "cv"

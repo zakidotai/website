@@ -1,0 +1,9 @@
+{{ $here := .Page.RelPermalink }}
+<ul class="link-list">
+  {{ range hugo.Data.research }}
+    {{ $url := .url | relURL }}
+    {{ if ne $url $here }}
+      <li><a href="{{ $url }}">{{ .title }}</a></li>
+    {{ end }}
+  {{ end }}
+</ul>

@@ -1,0 +1,33 @@
+{{ $profile := hugo.Data.profile }}
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="identity-rule"></div>
+  <div class="wrap header-top">
+    <p class="site-name"><a href="{{ "/" | relURL }}">{{ $profile.name }}</a></p>
+    <fieldset class="season-switch" data-season-control>
+      <legend>Season</legend>
+      <label><input type="radio" name="season" value="winter"><span>Winter</span></label>
+      <label><input type="radio" name="season" value="spring"><span>Spring</span></label>
+      <label><input type="radio" name="season" value="summer"><span>Summer</span></label>
+      <label><input type="radio" name="season" value="autumn"><span>Autumn</span></label>
+    </fieldset>
+  </div>
+  <div class="wrap">
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        {{ $here := . }}
+        {{ range site.Menus.main }}
+          {{ $active := false }}
+          {{ if and (eq .Identifier "home") $here.IsHome }}
+            {{ $active = true }}
+          {{ else if eq .Identifier $here.Params.nav }}
+            {{ $active = true }}
+          {{ end }}
+          <li>
+            <a href="{{ .URL | relURL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

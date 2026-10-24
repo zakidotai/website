@@ -1,0 +1,9 @@
+<article class="conference" id="{{ .id }}">
+  <h3>{{ .name }}</h3>
+  <p class="meta">{{ .dates }}{{ with .location }} · {{ . }}{{ end }}</p>
+  <ul class="stack">
+    {{ range .talks }}
+      <li>{{ .title }}{{ with .format }} <span class="meta">({{ . }})</span>{{ end }}</li>
+    {{ end }}
+  </ul>
+</article>
