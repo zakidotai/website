@@ -8,7 +8,7 @@ nav: research
 
 ## Motivation
 
-[Placeholder] This direction is about interpretable models for inorganic glasses and other materials. Replace this paragraph with a sourced problem statement.
+[Placeholder] This direction is about interpretable models for cement and inorganic glasses. Replace this paragraph with a sourced problem statement.
 
 ## Questions
 

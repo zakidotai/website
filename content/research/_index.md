@@ -2,7 +2,7 @@
 title: Research
 nav: research
 math: true
-description: Research directions of Mohd Zaki in materials AI, explainable machine learning, structural resilience, and scientific machine learning.
+description: Research directions of Mohd Zaki on materials for extreme environments, cement, and inorganic glasses.
 cascade:
   nav: research
 ---

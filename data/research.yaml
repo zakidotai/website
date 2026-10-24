@@ -1,20 +1,19 @@
 # Research directions. url is a site path without a leading slash.
 - id: materials-ai
   title: Materials AI and Scientific Language Models
-  summary: Scientific language models and methods for reading, extracting, and organizing knowledge from
-    the materials literature.
+  summary: Scientific language models for the literature on cement, inorganic glasses, and materials
+    for extreme environments.
   url: research/materials-ai/
 - id: explainable-ai
   title: Explainable AI and Materials Informatics
-  summary: Interpretable models that connect composition, processing, structure, and properties of engineering
-    materials.
+  summary: Interpretable models for the composition, processing, and properties of cement and inorganic
+    glasses.
   url: research/explainable-ai/
-- id: structural-resilience
-  title: Structural Resilience and Earthquake Engineering
-  summary: Data-driven methods for cementitious materials, structural response, and resilient infrastructure.
-  url: research/structural-resilience/
-- id: scientific-ml
-  title: Scientific Machine Learning and Uncertainty Quantification
-  summary: Scientific machine learning, reproducible research software, and uncertainty in engineering
-    models.
-  url: research/scientific-ml/
+- id: extreme-materials
+  title: Materials for Extreme Environments
+  summary: Discovering and understanding materials that must perform in extreme environments.
+  url: research/extreme-materials/
+- id: cement-glasses
+  title: Cement and Inorganic Glasses
+  summary: Data-driven studies of cement, other construction materials, and inorganic glasses.
+  url: research/cement-glasses/

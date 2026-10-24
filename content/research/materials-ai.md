@@ -8,7 +8,7 @@ nav: research
 
 ## Motivation
 
-[Placeholder] This direction is about artificial intelligence for reading and using the materials science literature. Replace this paragraph with a sourced problem statement.
+[Placeholder] This direction is about reading and using the literature on cement, inorganic glasses, and materials for extreme environments. Replace this paragraph with a sourced problem statement.
 
 ## Questions
 

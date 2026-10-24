@@ -3,18 +3,18 @@
 # scholar and orcid are blank until a verified URL is added.
 # The CV also lists mohdzaki1995@gmail.com; the public site shows the institutional address only.
 name: Mohd Zaki
-research_description: Artificial Intelligence for Materials Science and Structural Engineering
+research_description: Materials for Extreme Environments, Cement, and Inorganic Glasses
 job_title: Postdoctoral Researcher
 affiliation: Johns Hopkins University
 affiliation_detail: Hopkins Extreme Materials Institute, Baltimore, Maryland
 email: mzaki4@jh.edu
-biography: My research develops artificial intelligence and data-driven methods to understand, discover,
-  and design engineering materials and resilient structures. My interests span scientific language models,
-  materials informatics, explainable machine learning, structural response prediction, earthquake engineering,
-  and uncertainty quantification. I am particularly interested in connecting scientific knowledge, experimental
-  data, computational models, and AI to accelerate engineering discovery.
+biography: My research develops data-driven methods for materials in extreme environments and for
+  construction materials, especially cement and inorganic glasses. I work on scientific language models,
+  materials informatics, and explainable machine learning that connect composition, processing, and properties.
+  I am particularly interested in connecting scientific knowledge, experimental data, and computational
+  models to accelerate materials discovery.
 site_description: Personal academic website of Mohd Zaki, postdoctoral researcher at Johns Hopkins University,
-  working on artificial intelligence for materials science and structural engineering.
+  working on materials for extreme environments, cement, and inorganic glasses.
 links:
   scholar: ''
   orcid: ''
@@ -22,6 +22,6 @@ links:
   linkedin: ''
   website: https://web.iitd.ac.in/~cez198233
   website_label: IIT Delhi
-photo: ''
+photo: images/zaki.jpg
 cv_pdf: cv/mohd-zaki-cv.pdf
 cv_pdf_available: true

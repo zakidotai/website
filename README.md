@@ -54,7 +54,7 @@ Do not invent degrees, awards, collaborators, citation counts, or repository URL
 
 Each record in `data/publications.yaml` can include authors, title, venue, year, type (`journal`, `conference`, `preprint`, `chapter`, `other`), topics, DOI, publisher or preprint URL, PDF, code, dataset, BibTeX, `featured`, and `open_access`.
 
-Topics are `materials-ai`, `explainable-ai`, `structural-resilience`, and `scientific-ml`. `featured: true` adds the paper to the homepage selection. Set `open_access: true` only for a version you can share.
+Topics are `materials-ai`, `explainable-ai`, `extreme-materials`, and `cement-glasses`. `featured: true` adds the paper to the homepage selection. Set `open_access: true` only for a version you can share.
 
 To draft records from BibTeX:
 

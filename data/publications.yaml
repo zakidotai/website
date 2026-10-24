@@ -2,7 +2,7 @@
 # Empty doi, url, pdf, code, and dataset fields were not given on the CV. Do not invent them.
 # Set open_access: true only when the version is legally shareable.
 # featured: true places the paper in the homepage selection.
-# topics: materials-ai, explainable-ai, structural-resilience, scientific-ml.
+# topics: materials-ai, explainable-ai, extreme-materials, cement-glasses.
 - id: zaki2026llamat
   title: 'LLaMat: A family of large language models for materials research with insights into model adaptability
     in continued pre-training'
@@ -70,7 +70,9 @@
   venue: Binding Materials for Sustainable Construction, Woodhead Publishing
   detail: pp. 819–832
   type: chapter
-  topics: *id001
+  topics:
+  - materials-ai
+  - cement-glasses
   doi: ''
   url: ''
   pdf: ''
@@ -126,7 +128,9 @@
   venue: MRS Bulletin
   detail: ''
   type: journal
-  topics: *id001
+  topics:
+  - materials-ai
+  - cement-glasses
   doi: https://doi.org/10.1557/s43577-023-00560-1
   url: ''
   pdf: ''
@@ -166,6 +170,7 @@
   type: journal
   topics: &id002
   - explainable-ai
+  - cement-glasses
   doi: https://doi.org/10.1016/j.actamat.2023.119046
   url: ''
   pdf: ''
@@ -186,7 +191,7 @@
   type: journal
   topics:
   - materials-ai
-  - structural-resilience
+  - cement-glasses
   doi: ''
   url: ''
   pdf: ''
@@ -244,7 +249,8 @@
   venue: Scripta Materialia
   detail: '221: 114965'
   type: journal
-  topics: *id002
+  topics:
+  - explainable-ai
   doi: https://doi.org/10.1016/j.scriptamat.2022.114965
   url: ''
   pdf: ''
@@ -284,7 +290,9 @@
   venue: 'Journal of Non-Crystalline Solids: X'
   detail: '15: 100103'
   type: journal
-  topics: *id001
+  topics:
+  - materials-ai
+  - cement-glasses
   doi: https://doi.org/10.1016/j.nocx.2022.100103
   url: ''
   pdf: ''
@@ -343,8 +351,7 @@
   detail: '10(1): 21336'
   type: journal
   topics:
-  - structural-resilience
-  - scientific-ml
+  - cement-glasses
   doi: https://doi.org/10.1038/s41598-020-78368-1
   url: ''
   pdf: ''
@@ -364,7 +371,9 @@
   venue: International Journal of Applied Glass Science
   detail: '12(3): 277–292'
   type: journal
-  topics: *id001
+  topics:
+  - materials-ai
+  - cement-glasses
   doi: https://doi.org/10.1111/ijag.15881
   url: ''
   pdf: ''
@@ -384,7 +393,9 @@
   venue: Patterns
   detail: '2(7): 100290'
   type: journal
-  topics: *id001
+  topics:
+  - materials-ai
+  - cement-glasses
   doi: https://doi.org/10.1016/j.patter.2021.100290
   url: ''
   pdf: ''
@@ -403,8 +414,7 @@
   venue: Engineering, Construction and Architectural Management
   detail: ''
   type: journal
-  topics:
-  - structural-resilience
+  topics: []
   doi: https://doi.org/10.1108/ECAM-10-2020-0778
   url: ''
   pdf: ''
@@ -427,6 +437,7 @@
   topics:
   - materials-ai
   - explainable-ai
+  - cement-glasses
   doi: https://doi.org/10.1016/j.cep.2021.108607
   url: ''
   pdf: ''
@@ -448,7 +459,7 @@
   type: journal
   topics:
   - explainable-ai
-  - structural-resilience
+  - cement-glasses
   doi: https://doi.org/10.1016/j.cemconcomp.2022.104414
   url: ''
   pdf: ''
