@@ -5,6 +5,7 @@
 {{ with $profile.links.scholar }}{{ $same = $same | append . }}{{ end }}
 {{ with $profile.links.linkedin }}{{ $same = $same | append . }}{{ end }}
 {{ with $profile.links.x }}{{ $same = $same | append . }}{{ end }}
+{{ with $profile.links.researchgate }}{{ $same = $same | append . }}{{ end }}
 {{ with $profile.links.website }}{{ $same = $same | append . }}{{ end }}
 {{ $person := dict "@context" "https://schema.org" "@type" "Person" "name" $profile.name "jobTitle" $profile.job_title "description" $profile.research_description "url" site.Home.Permalink }}
 {{ with $profile.email }}{{ $person = merge $person (dict "email" (printf "mailto:%s" .)) }}{{ end }}
