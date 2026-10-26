@@ -18,19 +18,28 @@
 
 [data-season="winter"] {
   --accent: #002d72;
+  --season-bg: url("../images/seasons/winter.svg");
+  --season-tile: 100px;
 }
 
 [data-season="spring"] {
   --accent: #275e3d;
+  --season-bg: url("../images/seasons/spring2.svg");
+  --season-tile: 120px;
 }
 
 [data-season="summer"] {
   --accent: #0077d8;
+  --season-bg: url("../images/seasons/summer.svg");
+  --season-tile: 120px;
 }
 
 [data-season="autumn"] {
   --accent: #6a202b;
+  --season-bg: url("../images/seasons/autumn.svg");
+  --season-tile: 120px;
 }
+
 
 *,
 *::before,
@@ -44,7 +53,11 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: var(--season-bg);
+  background-repeat: repeat;
+  background-size: var(--season-tile, 108px) var(--season-tile, 108px);
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--serif);
   font-size: 1.125rem;
@@ -75,6 +88,8 @@ svg {
 .wrap {
   width: min(46rem, calc(100% - 2rem));
   margin-inline: auto;
+  background: var(--bg);
+  box-shadow: 0 0 0 0.85rem var(--bg);
 }
 
 .identity-rule {
@@ -420,6 +435,10 @@ blockquote {
 @media print {
   :root[data-season] {
     --accent: #002d72;
+  }
+
+  body {
+    background-image: none;
   }
 
   .season-switch,
