@@ -1,6 +1,19 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
+
+<h2>Paper reviewing</h2>
+{{ range hugo.Data.service }}
+  <p><span class="meta">{{ .years }}</span> {{ .summary }}</p>
+  <ul class="stack">
+    {{ range .venues }}
+      <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+{{ else }}
+  <p>No reviewing venues have been added yet.</p>
+{{ end }}
+
 <h2>Courses</h2>
 {{ range hugo.Data.teaching }}
   <article class="course" id="{{ .id }}">

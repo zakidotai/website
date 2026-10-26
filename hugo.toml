@@ -49,10 +49,10 @@ disableKinds = ["taxonomy", "term"]
   identifier = "collaborators"
 
 [[menus.main]]
-  name = "Teaching"
-  url = "/teaching/"
+  name = "Service"
+  url = "/service/"
   weight = 5
-  identifier = "teaching"
+  identifier = "service"
 
 [[menus.main]]
   name = "CV"

@@ -61,11 +61,16 @@
     <li>{{ .code }}: {{ .title }}, {{ .institution }}, {{ .years }}</li>
   {{ end }}
 </ul>
-<p><a href="{{ "teaching/" | relURL }}">Teaching page</a></p>
+<p><a href="{{ "service/" | relURL }}">Service page</a></p>
 
 <h2>Professional service</h2>
 {{ range hugo.Data.service }}
-  <p><span class="meta">{{ .years }}</span> {{ .text }}</p>
+  <p><span class="meta">{{ .years }}</span> {{ .summary }}</p>
+  <ul class="stack">
+    {{ range .venues }}
+      <li>{{ . }}</li>
+    {{ end }}
+  </ul>
 {{ end }}
 
 <h2>Invited talks and presentations</h2>

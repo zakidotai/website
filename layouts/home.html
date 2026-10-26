@@ -89,17 +89,17 @@
   </ul>
 </section>
 
-<section id="teaching">
-  <h2>Teaching</h2>
-  <ul class="stack">
-    {{ range hugo.Data.teaching }}
-      <li>
-        <a href="{{ printf "teaching/#%s" .id | relURL }}">{{ .code }}: {{ .title }}</a>
-        <span class="meta">{{ .years }}</span>
-      </li>
-    {{ end }}
-  </ul>
-  <p><a href="{{ "teaching/" | relURL }}">Teaching, mentoring, and outreach</a></p>
+<section id="service">
+  <h2>Service</h2>
+  {{ with index hugo.Data.service 0 }}
+    <p><span class="meta">{{ .years }}</span> {{ .summary }}</p>
+    <ul class="stack">
+      {{ range .venues }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  <p><a href="{{ "service/" | relURL }}">Service, teaching, and mentoring</a></p>
 </section>
 
 <section id="conferences">
@@ -118,7 +118,7 @@
     <li><a href="{{ "publications/" | relURL }}">Publications</a></li>
     <li><a href="{{ "research/" | relURL }}">Research</a></li>
     <li><a href="{{ "collaborators/" | relURL }}">Collaborators</a></li>
-    <li><a href="{{ "teaching/" | relURL }}">Teaching</a></li>
+    <li><a href="{{ "service/" | relURL }}">Service</a></li>
     <li><a href="{{ "cv/" | relURL }}">CV</a></li>
     <li><a href="{{ "research-impact/" | relURL }}">Research impact</a></li>
     <li><a href="{{ "conferences/" | relURL }}">Conferences</a></li>

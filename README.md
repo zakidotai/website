@@ -1,6 +1,6 @@
 # Mohd Zaki
 
-Academic website for Mohd Zaki. It is a Hugo site with no database and no API keys. The pages are Markdown. Publications, teaching, awards, conferences, news, and the CV are YAML in `data/`.
+Academic website for Mohd Zaki. It is a Hugo site with no database and no API keys. The pages are Markdown. Publications, service, awards, conferences, news, and the CV are YAML in `data/`.
 
 The visual reference is a text-first professor’s homepage. Colors come from the [Johns Hopkins palette](https://brand.jhu.edu/visual-identity/colors/). A season control in the header changes the accent. The background stays white and the text stays sable.
 
@@ -32,17 +32,20 @@ Set `--baseURL` to the real site address. For a project site that is `https://US
 | Research directions | `data/research.yaml` and `content/research/` |
 | Publications | `data/publications.yaml` |
 | Awards | `data/awards.yaml` |
-| Teaching | `data/teaching.yaml` |
+| Service, including reviewing venues | `data/service.yaml` |
+| Courses | `data/teaching.yaml` |
 | Conferences | `data/conferences.yaml` |
 | News | `data/news.yaml` |
-| Education, appointments, service, skills | matching files in `data/` |
+| Education, appointments, skills | matching files in `data/` |
 | Software and datasets | `data/software.yaml` |
 | Collaborators | `data/collaborators.yaml` |
 | Research impact | `data/impact.yaml` |
-| Season colors | `assets/css/main.css` |
+| Season colors and tile sizes | `assets/css/main.css` and `static/images/seasons/` |
 | How many news items and talks the homepage shows | `hugo.toml` |
 
-Leave a profile link blank to hide it. `photo` is a path under `static/`, such as `images/portrait.jpg`. Google Scholar, ORCID, and LinkedIn are blank until you add verified URLs.
+The Service tab lists paper reviewing first, then courses. Add a venue in `data/service.yaml` only when it is already on the CV. Mentoring, supervision, tutorials, and outreach stay empty until you write them. Edit season drawings in `static/images/seasons/`, not in `public/`.
+
+Leave a profile link blank to hide it. `photo` is a path under `static/`, such as `images/portrait.jpg`. Google Scholar and ORCID are blank until you add verified URLs.
 
 The public CV PDF is `static/cv/mohd-zaki-cv.pdf`. Replace that file when the CV changes, or point `cv_pdf` at another file in `static/`. The copy at the repository root is the source PDF used to seed the site.
 
@@ -114,4 +117,4 @@ Internal links use Hugo’s `relURL`, so they follow the base URL.
 - Verified software, datasets, and collaborators
 - Reviewed research-impact records
 - Sourced text for the four research pages
-- Mentoring, supervision, outreach, tutorials, and memberships
+- Mentoring, supervision, outreach, tutorials, and memberships on the Service page

@@ -1,6 +1,14 @@
 # Professional service transcribed from the CV.
+# Add a venue only when it is already on the CV. Do not invent journals or workshops.
 - years: 2021–present
-  text: 'Reviewed more than 40 research papers for Computational Materials, Journal of Physics: Materials,
-    Journal of Non-Crystalline Solids, Journal of American Ceramics Society, Digital Discovery, and conference
-    venues including ACL ARR, computational linguistics conferences, and the AI4MAT and AI4Science NeurIPS
-    workshops.'
+  summary: Reviewed more than 40 research papers.
+  venues:
+    - "Computational Materials"
+    - "Journal of Physics: Materials"
+    - "Journal of Non-Crystalline Solids"
+    - "Journal of the American Ceramic Society"
+    - "Digital Discovery"
+    - "ACL ARR"
+    - "Computational linguistics conferences"
+    - "AI4MAT"
+    - "AI4Science at NeurIPS"
